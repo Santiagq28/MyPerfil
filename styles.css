@@ -13,7 +13,7 @@ body{
     margin: 0px 60px;
     border-radius: 20px;
     width: 75%;
-    height: 350px;
+    height: 400px;
 }
 .cabecera{
     width: 100vw;
@@ -83,6 +83,8 @@ nav ul li a:hover {
     border: none;
     background-color:black;
     color: white;
+    display: flex;
+    justify-content: end;
 }
 .mimir{
     margin: 10px 0px;
@@ -111,7 +113,8 @@ h1{
     display: flex;
     justify-content:center ;
     flex-direction: row;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
     margin: 10px;
     
     
