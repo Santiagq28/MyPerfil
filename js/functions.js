@@ -1,0 +1,1 @@
+document.write("<h1>Escribiendo desde JS</h1>").innerHTML;
