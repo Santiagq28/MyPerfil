@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lazye</title>
-    <link rel="website icon" type="png" href="/img/lazye_logo.png" class="lazy_logo">
+    <link rel="shortcut icon" href="/img/logo2.png" type="image/x-icon">
     <style>
         *{
             margin: 0;
@@ -454,6 +454,46 @@
             border-radius: 5px;
             margin-top: 20px;
         }
+        .servicios{
+            background-color: #02020e;
+            margin-top: 300px;
+            display: grid;
+            align-items: center;
+            place-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        .servicios2{
+            display: flex;
+            margin: 10px 40px;
+            margin-right: 80px;
+        }
+        .servicios h3{
+            color:#fff;
+            font-size: 40px;
+        }
+        .servi h6{
+            font-size: 22px;
+        }
+        .servi{
+            background-color: #fff;
+            border-radius: 10px;
+            font-size: 18px;
+            margin: 20px;
+            padding: 60px 40px;
+        }
+        .servi p{
+            margin-top: 15px;
+            margin-bottom: 45px;
+        }
+        .about_icon{
+            margin-bottom: 30px;
+            width: 40px;
+            height: 40px;
+        }
+        .servi a{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -468,9 +508,9 @@
             
             <nav id="nav">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#father">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#references">Contacto</a></li>
                 </ul>
             </nav>
             <nav id="nav2">
@@ -486,7 +526,7 @@
         <div id="hijo_text">
             <h1>Contrata los Servicios de Lazye</h1>
             <h6>El mejor compañero para tu mascota.</h6>
-            <a href="#">Contratar</a>
+            <a href="#servicios">Contratar</a>
         </div>
         <div id="hijo_img"><img src="img/lazye_u.jpeg" alt="lazye_feliz" width="300px" height="240px"></div>
     </div>
@@ -521,7 +561,32 @@
         </div>
     </div>
         
-
+<section class="servicios" id="servicios">
+        <h3>Nuestros Servicios</h3>
+    <div class="servicios2">
+        <div class="servi">
+            <img src="icons/run.svg" alt="Icon" class="about_icon">
+            <h6>Paseos</h6>
+            <p>Tu amigo peludo puede salir al aire libre por un rato con alguno de nuestras personas capacitadas.</p>
+            <a href="#">Contratar -></a>
+        </div>
+        <div class="servi">
+            <img src="icons/dog.svg" alt="Icon" class="about_icon">
+            <h6>Cuidado</h6>
+            <p>Tu mascota estará en buenas manos, puedes estar tranquilo y realizar alguna actividad diferente.</p>
+            <a href="#">Contratar -></a>
+        </div>
+        <div class="servi">
+            <img src="icons/food.svg" alt="Icon" class="about_icon">
+            <h6>Productos</h6>
+            <p>Compra divesros productos relacionados a las mascotas, desde juguetes hasta comida.</p>
+            <a href="#">Contratar -></a>
+        </div>
+        
+    </div>
+    
+</section>
+    
     <section class="testimony" id="references">
         <div class="container question_container">
             <h3>Preguntas</h3>
@@ -591,7 +656,7 @@
         <img src="img/mensaje.png" alt="" class="picture">
         <div class="form">
             <label for="Questions">Envía tu Pregunta</label>
-            <form action="">
+            <form autocomplete="off">
                 
                 <input type="text" name="" id="quest" size="30" placeholder="Tu pregunta aquí">
                 <button type="submit" id="boton">Enviar</button>
